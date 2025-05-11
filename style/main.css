@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .tarjeta{
     display: flex;
     justify-content: space-between;
