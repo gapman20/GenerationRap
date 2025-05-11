@@ -1,0 +1,49 @@
+
+.titulo{
+    padding:50px 20px;
+}
+
+/* Estilo para la tarjeta que envuelve todo el contenido (borde, espaciado, alineación) */
+.tarjeta-redonda {
+  border: 2px solid black;         /* Borde azul alrededor de la tarjeta */
+  border-radius: 10px;               /* Esquinas redondeadas */
+  padding: 15px 40px;                /* Espaciado interno (arriba/abajo: 15px, izquierda/derecha: 20px) */
+  margin-bottom: 90px;               /* Espacio debajo de cada tarjeta */
+  max-width: 2000px;                 /* Ancho máximo de la tarjeta */
+  margin-left: auto;                 /* Centrar horizontalmente */
+  margin-right: auto;                /* Centrar horizontalmente */
+}
+
+/* Estilo para el título del concierto */
+.card-title {
+  margin-bottom: 10px;               /* Espacio debajo del título */
+  font-size: 1.40rem;                 /* Tamaño grande del texto */
+  font-weight: bold;                /* Negrita */
+  text-align: left;                 /* Alineación a la izquierda */
+}
+
+/* Contenedor que pone el texto y el botón en la misma línea */
+.contenido-linea {
+  display: flex;                     /* Flexbox: permite alinear elementos horizontalmente */
+  justify-content: space-between;   /* Espacio entre el texto y el botón */
+  align-items: center;              /* Alineación vertical centrada */
+  gap: 120px;                         /* Espacio entre los elementos (texto y botón) */
+}
+
+/* Estilo del párrafo del texto */
+.card-text {
+  margin: 0;                         /* Eliminar espacio por defecto del párrafo */
+  text-align: left;                 /* Alineación a la izquierda */
+  flex: 1;                          /* Ocupar todo el espacio disponible a la izquierda del botón */
+}
+
+/* Estilo del botón */
+.button {
+  background-color: #007bff;         /* Fondo azul */
+  color: white;                      /* Texto blanco */
+  padding: 10px 20px;                /* Espaciado interno del botón */
+  border: none;                      /* Sin borde exterior */
+  border-radius: 10px;               /* Bordes redondeados */
+  cursor: pointer;                   /* Cambia el cursor al pasar sobre el botón */
+  white-space: nowrap;               /* Evita que el texto del botón se divida en varias líneas */
+}
