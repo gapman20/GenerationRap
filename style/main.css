@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.tarjeta{
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+    margin: 10px;
+}
+#img-aczino{
+    width: 200px;
+    margin: 10px;
+}
+
+#h3-aczino{
+    display: inline;
+}
+
+#img-chuty{
+    width: 150px;
+    margin: 10px;
+}
+
+#img-azuky{
+    width: 200px;
+    margin: 10px;
+}
+
+footer{
+    text-align: center;
+}
