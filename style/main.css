@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Sedwick Ave Display", cursive;
 }
 
 .sedgwick-ave-display-regular {
-  font-family: "Sedgwick Ave Display", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 
 .tarjeta{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     border: 5px solid black;
     margin: 10px;
+    border-radius: 10px;
 }
 #img-aczino{
     width: 200px;
