@@ -5,43 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="style/main.css">
   </head>
-<body>
- 
-  <div class="text-center titulo">
+  <body class="body">
+    <a href="./index.html">
+      <header class="container">
+        <img src="./img/Imagen de WhatsApp 2025-05-11 a las 08.45.59_58131ee9.jpg" alt="Logo de generation rap" id="logo-generation-rap">
+        <h1>Generation Rap</h1>
+        <h2>Conoce a nuestros freestylers</h2>
+      </header>
+    </a>
+  <div class="text-center titulo parallax azuky">
     <h2>AZUKY</h2> 
   </div>
-
   <div class="col-md-8 tarjeta-redonda">
-  <div class="card-body">
-    <h5 class="card-title">Concierto Texcoco</h5>
-    <div class="contenido-linea">
-      <p class="card-text">
-        El dia martes 24 de Noviembre del 2025 se presenta ACSESINO en la arena mexico a las 10 de la noche 
-      </p>
-      <a href="#" class="btn btn-primary button">Boletos</a>
-    </div>
-  </div>
     <div class="card-body">
-    <h5 class="card-title">Concierto Guadalajara</h5>
-    <div class="contenido-linea">
-      <p class="card-text">
-        El dia martes 2 de Julio del 2025 se presenta ACSESINO en la palacio mexico a las 9 de la noche 
-      </p>
-      <a href="#" class="btn btn-primary button">Boletos</a>
+      <h5 class="card-title">Concierto Texcoco</h5>
+      <div class="contenido-linea d-flex align-items-center flex-wrap gap-2">
+        <p class="card-text flex-grow-1 mb-0">
+          El dia martes 24 de Noviembre del 2025 se presenta AZUKY en la Arena México a las 20:00 horas.
+        </p>
+        <div class="d-flex align-items-center gap-2">
+          <input type="number" id="cantTEX" min="0" max="5" placeholder="Boletos" class="form-control" style="width: 100px">
+          <a href="#" class="btn btn-primary button">Comprar</a>
+        </div>
+      </div>
     </div>
-  </div>
     <div class="card-body">
-    <h5 class="card-title">Concierto Zacatecas</h5>
-    <div class="contenido-linea">
-      <p class="card-text">
-        El dia Miercoles 4 de Diciembre del 2025 se presenta ACSESINO en el autodromo mexico a las 9 de la noche
-      </p>
-      <a href="#" class="btn btn-primary button">Boletos</a>
+      <h5 class="card-title">Concierto Guadalajara</h5>
+      <div class="contenido-linea d-flex align-items-center flex-wrap gap-2">
+        <p class="card-text flex-grow-1 mb-0">
+            El dia martes 2 de Julio del 2025 se presenta AZUKY en el Palacio México a las 21:00 horas.
+        </p>
+        <div class="d-flex align-items-center gap-2">
+            <input type="number" id="cantGDL" min="0" max="5" placeholder="Boletos" class="form-control" style="width: 100px">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Concierto Zacatecas</h5>
+      <div class="contenido-linea d-flex align-items-center flex-wrap gap-2">
+        <p class="card-text flex-grow-1 mb-0">
+          El dia Miercoles 4 de Diciembre del 2025 se presenta AZUKY en el Autodromo Hermanos Rodriguez a las 21:00 horas.
+        </p>
+        <div class="d-flex align-items-center gap-2">
+            <input type="number" id="cantZAC" min="0" max="5" placeholder="Boletos" class="form-control" style="width: 100px">
+            <a href="#" class="btn btn-primary button">Comprar</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <footer>
+    <p>&copy; 2023 Evento Freestyle. Todos los derechos reservados.</p>
+  </footer>
   <!-- Script de Bootstrap (para menús y componentes interactivos) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

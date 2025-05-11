@@ -1,17 +1,30 @@
+@font-face {
+   font-family: docallisme;
+   src: url("../fonts/docallisme.ttf");
+}
 
 .titulo{
-    padding:50px 20px;
+  padding:50px 50px;
+  color:white;
+}
+
+.titulo > h2{
+  font-family: docallisme;
+  float:left;
+  font-size: 100px;
 }
 
 /* Estilo para la tarjeta que envuelve todo el contenido (borde, espaciado, alineación) */
 .tarjeta-redonda {
-  border: 2px solid black;         /* Borde azul alrededor de la tarjeta */
+  border: 2px solid rgb(96, 96, 96);         /* Borde azul alrededor de la tarjeta */
   border-radius: 10px;               /* Esquinas redondeadas */
   padding: 15px 40px;                /* Espaciado interno (arriba/abajo: 15px, izquierda/derecha: 20px) */
   margin-bottom: 90px;               /* Espacio debajo de cada tarjeta */
   max-width: 2000px;                 /* Ancho máximo de la tarjeta */
   margin-left: auto;                 /* Centrar horizontalmente */
   margin-right: auto;                /* Centrar horizontalmente */
+  color:white;                     /* Color blanco texto tarjeta*/
+  background-color: inherit;         /* Se repite fondo para evitar transparencia*/
 }
 
 /* Estilo para el título del concierto */
@@ -35,6 +48,7 @@
   margin: 0;                         /* Eliminar espacio por defecto del párrafo */
   text-align: left;                 /* Alineación a la izquierda */
   flex: 1;                          /* Ocupar todo el espacio disponible a la izquierda del botón */
+  color: rgb(96, 96, 96)
 }
 
 /* Estilo del botón */
@@ -46,4 +60,47 @@
   border-radius: 10px;               /* Bordes redondeados */
   cursor: pointer;                   /* Cambia el cursor al pasar sobre el botón */
   white-space: nowrap;               /* Evita que el texto del botón se divida en varias líneas */
+}
+
+/* Estilo texto descriptivo del concierto*/
+.card-body{
+  margin: 25px 0 25px 0;            /* Margenes entre las lineas de eventos*/
+}
+
+/* Estilo elemento a menú*/
+.body > a{
+  text-decoration: none;            /* Se quita decoración de enlace*/
+}
+
+/*Clase parallax para imagen*/
+.parallax {
+  min-height: 350px;                                /* tamaño fijo a 350 px*/
+  background-attachment: fixed;                     /* Imagen fija */
+  background-position: center;                      /* Imagen centrada */
+  background-repeat: no-repeat;                     /* No se repite el fondo*/
+  background-size: cover;                          /* Cubrir todo */
+  margin-bottom: -80px;                              /* Margen con el siguiente elemento */
+}
+
+.aczino{
+    background-image: url("../img/aczinoPar.jpeg");       /* Imagen del rapero */
+}
+
+.azuky{
+    background-image: url("../img/azukyPar.avif");       /* Imagen del rapero */
+}
+
+.chuty{
+    background-image: url("../img/chutyPar.jpg");       /* Imagen del rapero */
+}
+
+input[type=number]{
+  color:white;
+  background-color: black;
+}
+
+input[type=number]::placeholder{
+  color:rgb(96, 96, 96);
+  font-size:.9em;
+  text-align:center;
 }
