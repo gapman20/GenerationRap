@@ -1,8 +1,18 @@
+:root{
+  --color_fondo: #000;
+  --color_fuente_boton: #000;
+  --color_fuente_texto: #fff;
+  --fuente_principal: "Sedwick Ave Display", cursive;
+  --color_hover_boton: orange;
+  --color_texto_secundario: rgb(96, 96, 96);
+  --id_before: red;
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Sedwick Ave Display", cursive;
+    font-family: var(--fuente_principal);
 }
 
 .sedgwick-ave-display-regular {
@@ -11,15 +21,16 @@
     font-style: normal;
 }
 
+
 .body{
-    background-color: black;
+    background-color: var(--color_fondo);
 }
 
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: var(--color_fuente_texto);
 }
 h1{
     margin-right: 300px;
@@ -35,10 +46,10 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid orange;
+    border: 2px solid var(--color_hover_boton);
     margin: 10px;
     border-radius: 10px;
-    color: white;
+    color: var(--color_fuente_texto);
 }
 
 img{
@@ -70,11 +81,12 @@ button{
 }
 
 button:hover{
-    background-color: orange;
-    color: white;
+    background-color: var(--color_hover_boton);
+    color: var(--color_fuente_texto);
+    
 }
 
 footer{
     text-align: center;
-    color: white;
+    color: var(--color_fuente_texto);
 }

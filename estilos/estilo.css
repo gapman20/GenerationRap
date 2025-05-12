@@ -5,8 +5,10 @@
 
 .titulo{
   padding:50px 50px;
-  color:white;
+  color: var(--color_fuente_texto);
 }
+
+
 
 .titulo > h2{
   font-family: docallisme;
@@ -16,14 +18,14 @@
 
 /* Estilo para la tarjeta que envuelve todo el contenido (borde, espaciado, alineación) */
 .tarjeta-redonda {
-  border: 2px solid rgb(96, 96, 96);         /* Borde azul alrededor de la tarjeta */
+  border: 2px solid var(--color_texto_secundario);         /* Borde azul alrededor de la tarjeta */
   border-radius: 10px;               /* Esquinas redondeadas */
   padding: 15px 40px;                /* Espaciado interno (arriba/abajo: 15px, izquierda/derecha: 20px) */
   margin-bottom: 90px;               /* Espacio debajo de cada tarjeta */
   max-width: 2000px;                 /* Ancho máximo de la tarjeta */
   margin-left: auto;                 /* Centrar horizontalmente */
   margin-right: auto;                /* Centrar horizontalmente */
-  color:white;                     /* Color blanco texto tarjeta*/
+  color: var(--color_fuente_texto);                     /* Color blanco texto tarjeta*/
   background-color: inherit;         /* Se repite fondo para evitar transparencia*/
 }
 
@@ -48,13 +50,13 @@
   margin: 0;                         /* Eliminar espacio por defecto del párrafo */
   text-align: left;                 /* Alineación a la izquierda */
   flex: 1;                          /* Ocupar todo el espacio disponible a la izquierda del botón */
-  color: rgb(96, 96, 96)
+  color: var(--color_texto_secundario);
 }
 
 /* Estilo del botón */
 .button {
   background-color: #007bff;         /* Fondo azul */
-  color: white;                      /* Texto blanco */
+  color: var(--color_fuente_texto);                      /* Texto blanco */
   padding: 10px 20px;                /* Espaciado interno del botón */
   border: none;                      /* Sin borde exterior */
   border-radius: 10px;               /* Bordes redondeados */
@@ -95,12 +97,36 @@
 }
 
 input[type=number]{
-  color:white;
-  background-color: black;
+  color: var(--color_fuente_texto);
+  background-color: var(--color_fondo);
 }
 
 input[type=number]::placeholder{
-  color:rgb(96, 96, 96);
+  color: var(--color_texto_secundario);
   font-size:.9em;
   text-align:center;
+}
+
+#aczino::before {
+            content: "★"; 
+            color: var(--id_before);
+            position: absolute;
+            left: 0;
+            font-size: .5em;
+}
+
+#azuky::before {
+            content: "♥"; 
+            color: var(--id_before);
+            position: absolute;
+            left: 0;
+            font-size: .5em;
+}
+
+#chuty::before {
+            content: "♣"; 
+            color: var(--id_before);
+            position: absolute;
+            left: 0;
+            font-size: .5em;
 }
